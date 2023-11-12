@@ -1,0 +1,130 @@
+/* Fonts */
+@font-face {
+    font-family: 'bebasNeue';
+    src: url('font/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'permanentMarker';
+    src: url('font/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'uBuntu';
+    src: url('font/Ubuntu-Regular.ttf') format('truetype');
+}
+
+/* Variables */
+:root {
+    --primary-color: #FB6A27;
+    --dark-color: #0F0F0F;
+    --gray-color: gray;
+    --green-color: rgb(16, 206, 16);
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'uBuntu', sans-serif;
+}
+
+.main {
+    background-color: rgb(20, 21, 56);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Global CSS */
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-light-redblue {
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.btn-light-redblue:hover {
+    background-color: var(--dark-color);
+    color:white;
+}
+
+.wa {
+    color: var(--green-color);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-dark {
+    color: white;
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* Style CSS */
+
+/* Navbar */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active {
+    color: var(--primary-color);
+}
+
+/* Header */
+.header-section .header-paragraph {
+    color: var(--dark-color);
+}
+
+/* Portfolio */
+.portfolio-section .card .card-img-top {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-section .card .card-img-top {
+        height: 100px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+/* Image */
+.img {
+    border-radius: 50%;
+    border-color: aliceblue;
+    position: relative;
+    top: 80px;
+    left: 100px;
+    transform: scale(2)
+}
